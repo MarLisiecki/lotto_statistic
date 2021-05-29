@@ -1,0 +1,1 @@
+LOTTO_URL_FILE = 'http://www.mbnet.com.pl/dl.xls'
