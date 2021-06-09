@@ -2,9 +2,9 @@ from collections import Counter
 
 import requests
 
-from const import LOTTO_URL_FILE
+from stat_func.const import LOTTO_URL_FILE
 from stat_func.data_manipulation import DataManipulation
-from interfaces import AbstractInterfaceGames, AbstractInterfaceDownloadFile
+from stat_func.interfaces import AbstractInterfaceGames, AbstractInterfaceDownloadFile
 
 
 class Lotto(AbstractInterfaceGames, AbstractInterfaceDownloadFile):
@@ -17,7 +17,7 @@ class Lotto(AbstractInterfaceGames, AbstractInterfaceDownloadFile):
         return most_common_num
 
     def check_my_numbers(self, my_list):
-        check_list = DataManipulation.all_data_to_list('../lotto_data.csv')
+        check_list = DataManipulation.all_data_to_list('lotto_data.csv')
         if my_list in check_list:
             return True
         return False
@@ -29,10 +29,10 @@ class Lotto(AbstractInterfaceGames, AbstractInterfaceDownloadFile):
             file.write(response.content)
 
     def convert_file(self):
-        DataManipulation.xls_to_csv('../lotto_data.xls')
+        DataManipulation.xls_to_csv('lotto_data.xls')
 
     def get_merged_list(self):
-        list_of_numbers = DataManipulation.merge_list(DataManipulation.all_data_to_list('../lotto_data.csv'))
+        list_of_numbers = DataManipulation.merge_list(DataManipulation.all_data_to_list('lotto_data.csv'))
         return list_of_numbers
 
 

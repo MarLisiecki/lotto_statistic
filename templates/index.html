@@ -2,61 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Lotto</title>
-    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="static/css/styles.css">
-    <script src="static/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-            crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-</head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Lotto</title>
+	<link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/fonts/fontawesome-all.min.css">
+	<link rel="stylesheet" href="static/css/styles.css">
+	<script src="static/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> </head>
 
 <body style="border-left-color: var(--bs-blue);text-align: right;margin-left: 0px;margin-top: 0px;background: #44475a;">
-<nav class="navbar navbar-dark navbar-expand-md" id="app-navbar" style="background: #282a36;">
-    <div class="container-fluid"><a class="navbar-brand" href="#"><i class="fas fa-gamepad" id="brand-logo"></i></a>
-        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
-                class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link active" href="#">Lotto - sprawdź swoje numery</a></li>
-                <li class="nav-item"></li>
-                <li class="nav-item"></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div class="container text-center" style="margin-top: 120px;margin-bottom: -150px;"><label
-        class="form-label text-center" style="color: #bd93f9;">Podaj swoje liczby</label></div>
-<div class="container text-center" style="margin-top: 200px;"><input type="number"
-                                                                     style="width: 100px;margin-right: 20px;background: rgb(92,96,115);"
-                                                                     required="" min="1" max="49" step="1"><input
-        type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);"><input type="number"
-                                                                                                 style="width: 100px;margin-right: 20px;background: rgb(92,96,115);"><input
-        type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);"><input type="number"
-                                                                                                 style="width: 100px;margin-right: 20px;background: rgb(92,96,115);"><input
-        type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);"></div>
-<div class="container text-center" style="margin-top: 30px;">
-    <button class="btn btn-dark btn-lg" id="button" type="submit" style="background: #b193ef;color: rgb(40,42,54);">
-        Sprawdź!
-    </button>
-</div>
-<div class="container text-center" style="margin-top: 120px;margin-bottom: -150px;"><label
-        class="form-label text-center" style="color: #bd93f9;">Najczęściej padające liczby w historii</label></div>
-<div class="container text-center" style="margin-top: 200px;"><label class="form-label text-start"
-                                                                     style="padding: 20px;margin-right: 25px;color: #f1fa8c;">Liczba
-    1</label><label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: #f1fa8c;">Liczba
-    2<br></label><label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: #f1fa8c;">Liczba
-    3</label><label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: #f1fa8c;">Liczba
-    4</label><label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: rgb(241,250,140);">Liczba
-    5</label><label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: #f1fa8c;">Liczba
-    6</label></div>
-
-
+	<nav class="navbar navbar-dark navbar-expand-md" id="app-navbar" style="background: #282a36;">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"> <i class="fas fa-gamepad" id="brand-logo"></i> </a>
+			<button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"> <span class="visually-hidden">Toggle navigation</span> <span class="navbar-toggler-icon"></span> </button>
+			<div class="collapse navbar-collapse" id="navcol-1">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"> <a class="nav-link active" href="#">Lotto - sprawdź swoje numery</a> </li>
+					<li class="nav-item"></li>
+					<li class="nav-item"></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container text-center" style="margin-top: 120px;margin-bottom: -150px;">
+		<label class="form-label text-center" style="color: #bd93f9;">Podaj swoje liczby</label>
+	</div>
+	<div class="container text-center" style="margin-top: 200px;">
+		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);" required="" min="1" max="49" step="1">
+		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);">
+		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);">
+		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);">
+		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);">
+		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);"> </div>
+	<div class="container text-center" style="margin-top: 30px;">
+		<button class="btn btn-dark btn-lg" id="button" type="submit" style="background: #b193ef;color: rgb(40,42,54);"> Sprawdź! </button>
+	</div>
+	<div class="container text-center" style="margin-top: 120px;margin-bottom: -150px;">
+		<label class="form-label text-center" style="color: #bd93f9;">Najczęściej padające liczby w historii</label>
+	</div>
+	<div class="container text-center" style="margin-top: 200px;">
+		<label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: #f1fa8c;">{{ data[0] }}</label>
+		<label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: #f1fa8c;">{{ data[1] }}<br> </label>
+		<label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: #f1fa8c;">{{ data[2] }}</label>
+		<label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: #f1fa8c;">{{ data[3] }}</label>
+		<label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: rgb(241,250,140);">{{ data[4] }}</label>
+		<label class="form-label text-start" style="padding: 20px;margin-right: 25px;color: #f1fa8c;">{{ data[5] }}</label>
+	</div>
 </body>
 
 </html>
