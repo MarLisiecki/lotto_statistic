@@ -22,10 +22,17 @@ pip install -r requirements.txt
 
 ## Usage
 <p align="left">
+<<<<<<< Updated upstream
 Go to [app] (https://lotto-fast-api.herokuapp.com) to check statistic or check your numbers
 </p>
 <p align="left">
 Or use an [interactive API docs] (https://lotto-fast-api.herokuapp.com/docs)
+=======
+Go to app (https://lotto-fast-api.herokuapp.com) to check statistic or check your numbers
+</p>
+<p align="left">
+Or use an interactive API docs (https://lotto-fast-api.herokuapp.com/docs)
+>>>>>>> Stashed changes
 </p>
 
 
