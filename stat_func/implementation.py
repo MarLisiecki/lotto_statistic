@@ -25,7 +25,7 @@ class Lotto(AbstractInterfaceGames, AbstractInterfaceDownloadFile):
     def download_file(self):
         link_to_file = self.url_for_file
         response = requests.get(link_to_file)
-        with open('../lotto_data.xls', 'wb') as file:
+        with open('lotto_data.xls', 'wb') as file:
             file.write(response.content)
 
     def convert_file(self):
@@ -38,7 +38,7 @@ class Lotto(AbstractInterfaceGames, AbstractInterfaceDownloadFile):
 
 if __name__ == '__main__':
     lotto = Lotto()
-    # lotto.download_file()
+    lotto.download_file()
     lotto.convert_file()
     print(lotto.most_common().keys())
     print(lotto.check_my_numbers([6, 17, 21, 24, 27, 34]))

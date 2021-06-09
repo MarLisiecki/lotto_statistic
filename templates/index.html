@@ -29,16 +29,22 @@
 	<div class="container text-center" style="margin-top: 120px;margin-bottom: -150px;">
 		<label class="form-label text-center" style="color: #bd93f9;">Podaj swoje liczby</label>
 	</div>
+	<br>
+	<div class="container text-center" style="margin-top: 120px;margin-bottom: -150px;">
+		<label class="form-label text-center" style="color: #ff5555;">{{ answer }}</label>
+	</div>
+	<form method="post" action="/numbers_from_user">
 	<div class="container text-center" style="margin-top: 200px;">
-		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);" required="" min="1" max="49" step="1">
-		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);">
-		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);">
-		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);">
-		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);">
-		<input type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);"> </div>
+		<input name = 'first_nb' type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);" required="" min="1" max="49" step="1">
+		<input name = 'second_nb' type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);" required="" min="1" max="49" step="1">
+		<input name = 'third_nb' type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);" required="" min="1" max="49" step="1">
+		<input name = 'fourth_nb' type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);" required="" min="1" max="49" step="1">
+		<input name = 'fifth_nb' type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);" required="" min="1" max="49" step="1">
+		<input name = 'sixth_nb' type="number" style="width: 100px;margin-right: 20px;background: rgb(92,96,115);" required="" min="1" max="49" step="1"> </div>
 	<div class="container text-center" style="margin-top: 30px;">
 		<button class="btn btn-dark btn-lg" id="button" type="submit" style="background: #b193ef;color: rgb(40,42,54);"> Sprawdź! </button>
 	</div>
+	</form>
 	<div class="container text-center" style="margin-top: 120px;margin-bottom: -150px;">
 		<label class="form-label text-center" style="color: #bd93f9;">Najczęściej padające liczby w historii</label>
 	</div>
